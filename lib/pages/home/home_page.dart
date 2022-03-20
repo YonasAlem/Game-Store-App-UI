@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_store_ui/pages/home/widgets/genre.dart';
 
 import 'widgets/header.dart';
 import 'widgets/search.dart';
@@ -35,6 +36,7 @@ class _HomePageState extends State<HomePage> {
             children: const [
               Header(),
               Search(),
+              Genre(),
             ],
           )
         ],
