@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'popular.dart';
+
 class Genre extends StatefulWidget {
   const Genre({Key? key}) : super(key: key);
 
@@ -88,7 +90,23 @@ class _GenreState extends State<Genre> {
               ),
             ),
           ),
+          _buildGenreTitle(text: 'Popular Games'),
+          const Popular(),
         ],
+      ),
+    );
+  }
+
+  Container _buildGenreTitle({required String text}) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 10),
+      width: double.maxFinite,
+      child: Text(
+        text,
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+        ),
       ),
     );
   }
