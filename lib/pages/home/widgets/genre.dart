@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'newest.dart';
 import 'popular.dart';
 
 class Genre extends StatefulWidget {
@@ -92,6 +93,8 @@ class _GenreState extends State<Genre> {
           ),
           _buildGenreTitle(text: 'Popular Games'),
           const Popular(),
+          _buildGenreTitle(text: 'Newest Games'),
+          const Newest(),
         ],
       ),
     );
