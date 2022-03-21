@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_store_ui/pages/detail/detail_page.dart';
 
 import '../../../models/game_model.dart';
 
@@ -18,7 +19,13 @@ class _PopularState extends State<Popular> {
       child: ListView.separated(
         itemBuilder: (_, index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) {
+                  return DetailPage(gameModel: gameList[index]);
+                },
+              ));
+            },
             child: Card(
               elevation: 5,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
