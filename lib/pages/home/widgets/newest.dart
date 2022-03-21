@@ -51,10 +51,10 @@ class _NewestState extends State<Newest> {
                                     style: const TextStyle(color: Colors.grey),
                                   ),
                                   const SizedBox(height: 2),
-                                  // _buildRatingStar(),
+                                  _buildRatingStar(),
                                 ],
                               ),
-                              // _buildInstallButton(),
+                              _buildInstallButton(),
                             ],
                           ),
                         ],
@@ -65,6 +65,43 @@ class _NewestState extends State<Newest> {
               ),
             )
             .toList(),
+      ),
+    );
+  }
+
+  Row _buildRatingStar() {
+    final colors = [
+      Colors.amber,
+      Colors.amber,
+      Colors.amber,
+      Colors.amber,
+      Colors.grey.withOpacity(0.4),
+    ];
+    return Row(
+      children: colors
+          .map(
+            (e) => Icon(
+              Icons.star,
+              size: 14,
+              color: e,
+            ),
+          )
+          .toList(),
+    );
+  }
+
+  Container _buildInstallButton() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+      decoration: BoxDecoration(
+        color: const Color(0xFF5F67EA),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      child: const Text(
+        'Install',
+        style: TextStyle(
+          color: Colors.white,
+        ),
       ),
     );
   }
