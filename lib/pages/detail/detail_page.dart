@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:game_store_ui/models/game_model.dart';
+
+import 'widgets/sliver_deligate.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({Key? key, required this.gameModel}) : super(key: key);
@@ -11,8 +11,16 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Detail page'),
+      body: CustomScrollView(
+        slivers: [
+          SliverPersistentHeader(
+            delegate: SliverDelegate(
+              gameModel: gameModel,
+              expandedHeight: 320,
+              roundedContainerHeight: 20,
+            ),
+          ),
+        ],
       ),
     );
   }
