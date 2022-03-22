@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_store_ui/pages/detail/widgets/game_desc.dart';
 import 'package:game_store_ui/pages/detail/widgets/game_gallery.dart';
 
 import '../../../models/game_model.dart';
@@ -17,6 +18,7 @@ class GameInfo extends StatelessWidget {
         children: [
           GameHeader(gameModel),
           GameGallery(gameModel: gameModel),
+          GameDesc(gameModel: gameModel),
         ],
       ),
     );
