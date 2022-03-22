@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:game_store_ui/models/game_model.dart';
 
+import 'widgets/game_info.dart';
 import 'widgets/sliver_deligate.dart';
 
 class DetailPage extends StatelessWidget {
@@ -19,6 +20,9 @@ class DetailPage extends StatelessWidget {
               expandedHeight: 320,
               roundedContainerHeight: 20,
             ),
+          ),
+          SliverToBoxAdapter(
+            child: GameInfo(gameModel: gameModel),
           ),
         ],
       ),
