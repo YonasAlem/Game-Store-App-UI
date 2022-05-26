@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Game Store Home Page      |  Game Store Detail Page
+:-------------------------:|:-------------------------:
+![] ![Screenshot_20220526-095447](https://user-images.githubusercontent.com/105295281/170435133-1afc7298-7aa0-4f79-bd88-d3b590049a2c.png)
+|  ![]![Screenshot_20220526-095617](https://user-images.githubusercontent.com/105295281/170435176-32dcf000-1f02-4294-bb33-2836a7019eb2.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
