@@ -2,7 +2,7 @@
 
 a sleek and modern user interface (UI) designed for a game store application, built using the Flutter framework
 
-## Getting Started
+## Screenshots
 
 Game Store Home Page      |  Game Store Detail Page
 :-------------------------:|:-------------------------:
