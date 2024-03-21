@@ -1,6 +1,6 @@
-# game_store_ui
+# Game Store UI
 
-A new Flutter project.
+a sleek and modern user interface (UI) designed for a game store application, built using the Flutter framework
 
 ## Getting Started
 
